@@ -33,3 +33,19 @@ There is only one tab at the top i.e. 'coming soon' instead of two - 'coming soo
 Font used is Roboto (which I don't personally like at all). To compile SASS to CSS, I've used node-sass-chokidar. npm-run-all is used to run both the react app and the compiler.
 
 Website is responsive to some extend.
+
+
+BASH SCRIPT TO DOWNLOAD POSTERS:
+
+## declare an array variable
+declare -a array=( {list of event codes here. ex - "ET00072278" "ET00075253"}  )
+
+# get length of an array
+arraylength=${#array[@]}
+
+# use for loop to read all values and substitute in api url to get images
+for (( i=1; i<${arraylength}+1; i++ ));
+do
+  foo="https://in.bmscdn.com/events/moviecard/${array[$i-1]}.jpg"
+  wget $foo
+done
