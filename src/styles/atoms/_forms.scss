@@ -1,0 +1,22 @@
+input {
+  min-width: 180px;
+  min-height: 40px;
+  border: 1px solid #BBB;
+  border-radius: 25px;
+  outline: none;
+  padding: 0 20px;
+  font-size: 18px;
+  font-family: Roboto-Light, sans-serif;
+}
+
+input:focus {
+  border: 1px solid rgb(0,0,255);
+}
+
+
+@media(max-width: 450px) {
+  input {
+    min-width: 150px;
+    max-width: 150px;
+  }
+}

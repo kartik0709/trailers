@@ -1,0 +1,31 @@
+$color-red: #CA0E0E;
+$color-yellow: #FA0;
+$color-green: #3CB371;
+
+main {
+  height: 100%;
+}
+
+.center-it {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 20px;
+  justify-content: center;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+@import 'card';
+@import 'header';
+@import 'trailer';

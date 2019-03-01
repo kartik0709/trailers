@@ -1,0 +1,64 @@
+.card-wrapper {
+  width: 236px;
+  margin: 16px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.card-wrapper > div.card {
+  height: 300px;
+  position: relative;
+}
+
+div.card > img.play {
+  @extend .center-it;
+  max-width: 60px;
+  transition: all .2s ease-in-out;
+}
+
+div.card:hover > img.play {
+  max-width: 80px;
+  transition: all .2s ease-in-out;
+}
+
+div.card > img:first-child {
+  height: 100%;
+  width: 100%;
+}
+
+div.card > div {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: $color-green;
+}
+
+div.card > div > div {
+  @extend .center-it;
+}
+
+div.card > div > div h4 {
+  text-align: center;
+  color: #FFF;
+  font-size: 16px;
+}
+
+div.card > div > div p {
+  text-align: center;
+  color: #FFF;
+  font-size: 14px;
+}
+
+.card-wrapper > p {
+  margin-top: 8px;
+  color: #FFF;
+  font-size: 14px;
+  padding-bottom: 24px;
+}
+
+.card-active {
+  border: 2px solid $color-green !important;
+}

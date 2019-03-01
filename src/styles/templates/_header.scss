@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 30px;
+  background: #000;
+}
+
+header > img {
+  max-width: 22px;
+  max-height: 36px;
+  cursor: pointer;
+}
+
+header > a {
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: #FFF;
+  background: $color-green;
+  text-transform: uppercase;
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 16px;
+}
