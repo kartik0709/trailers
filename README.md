@@ -35,15 +35,15 @@ Font used is Roboto (which I don't personally like at all). To compile SASS to C
 Website is responsive to some extend.
 
 
-BASH SCRIPT TO DOWNLOAD POSTERS:
+### BASH SCRIPT TO DOWNLOAD POSTERS:
 
-## declare an array variable
+#### declare an array variable
 declare -a array=( {list of event codes here. ex - "ET00072278" "ET00075253"}  )
 
-# get length of an array
+#### get length of an array
 arraylength=${#array[@]}
 
-# use for loop to read all values and substitute in api url to get images
+#### use for loop to read all values and substitute in api url to get images
 for (( i=1; i<${arraylength}+1; i++ ));
 do
   foo="https://in.bmscdn.com/events/moviecard/${array[$i-1]}.jpg"
