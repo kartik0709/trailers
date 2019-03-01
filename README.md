@@ -44,8 +44,11 @@ declare -a array=( {list of event codes here. ex - "ET00072278" "ET00075253"}  )
 arraylength=${#array[@]}
 
 #### use for loop to read all values and substitute in api url to get images
-for (( i=1; i<${arraylength}+1; i++ ));
+<pre>
+for (( i=1; i<${arraylength}+1; i++ )); <br/>
 do
-  foo="https://in.bmscdn.com/events/moviecard/${array[$i-1]}.jpg"
-  wget $foo
+</br>
+  foo="https://in.bmscdn.com/events/moviecard/${array[$i-1]}.jpg"<br/>
+  wget $foo<br/>
 done
+</pre>
